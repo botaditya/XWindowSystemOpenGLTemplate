@@ -3,8 +3,6 @@
 #include <GL/gl.h>
 #include <GL/glx.h>
 
-#include "Logger.h"
-
 typedef GLXContext (*glXCreateContextAttribsARBProc)(Display *, GLXFBConfig, GLXContext, Bool, const int *);
 
 class WindowManager
@@ -35,7 +33,6 @@ private:
     glXCreateContextAttribsARBProc glXCreateContextAttribsARB = NULL;
     GLXFBConfig glxFBConfig;
     GLXContext glxContext = NULL;
-    Logger logger;
 
     void createWindow();
     void setupGL();

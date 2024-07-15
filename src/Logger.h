@@ -24,4 +24,7 @@ private:
     char* getCurrentDateTime();
 };
 
+// Global instance of Logger
+extern Logger logger;
+
 #endif // LOGGER_H

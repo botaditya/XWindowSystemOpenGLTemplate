@@ -1,0 +1,818 @@
+[(null)] [INFO] Matching 10 FBConfigs found!
+[(null)] [INFO] Core profile GLXContext found and obtained successfully!
+[(null)] [INFO] Supports direct rendering!
+[(null)] [INFO] OpenGL Vendor : NVIDIA Corporation
+
+[(null)] [INFO] OpenGL Renderer : NVIDIA GeForce RTX 4060/PCIe/SSE2
+
+[(null)] [INFO] OpenGL Version : 4.6.0 NVIDIA 555.42.06
+
+[(null)] [INFO] GLSL Version : 4.60 NVIDIA
+
+[(null)] [INFO] Supported Extensions (401) are:
+
+[(null)] [INFO] GL_AMD_multi_draw_indirect
+
+[(null)] [INFO] GL_AMD_seamless_cubemap_per_texture
+
+[(null)] [INFO] GL_AMD_vertex_shader_viewport_index
+
+[(null)] [INFO] GL_AMD_vertex_shader_layer
+
+[(null)] [INFO] GL_ARB_arrays_of_arrays
+
+[(null)] [INFO] GL_ARB_base_instance
+
+[(null)] [INFO] GL_ARB_bindless_texture
+
+[(null)] [INFO] GL_ARB_blend_func_extended
+
+[(null)] [INFO] GL_ARB_buffer_storage
+
+[(null)] [INFO] GL_ARB_clear_buffer_object
+
+[(null)] [INFO] GL_ARB_clear_texture
+
+[(null)] [INFO] GL_ARB_clip_control
+
+[(null)] [INFO] GL_ARB_color_buffer_float
+
+[(null)] [INFO] GL_ARB_compressed_texture_pixel_storage
+
+[(null)] [INFO] GL_ARB_conservative_depth
+
+[(null)] [INFO] GL_ARB_compute_shader
+
+[(null)] [INFO] GL_ARB_compute_variable_group_size
+
+[(null)] [INFO] GL_ARB_conditional_render_inverted
+
+[(null)] [INFO] GL_ARB_copy_buffer
+
+[(null)] [INFO] GL_ARB_copy_image
+
+[(null)] [INFO] GL_ARB_cull_distance
+
+[(null)] [INFO] GL_ARB_debug_output
+
+[(null)] [INFO] GL_ARB_depth_buffer_float
+
+[(null)] [INFO] GL_ARB_depth_clamp
+
+[(null)] [INFO] GL_ARB_depth_texture
+
+[(null)] [INFO] GL_ARB_derivative_control
+
+[(null)] [INFO] GL_ARB_direct_state_access
+
+[(null)] [INFO] GL_ARB_draw_buffers
+
+[(null)] [INFO] GL_ARB_draw_buffers_blend
+
+[(null)] [INFO] GL_ARB_draw_indirect
+
+[(null)] [INFO] GL_ARB_draw_elements_base_vertex
+
+[(null)] [INFO] GL_ARB_draw_instanced
+
+[(null)] [INFO] GL_ARB_enhanced_layouts
+
+[(null)] [INFO] GL_ARB_ES2_compatibility
+
+[(null)] [INFO] GL_ARB_ES3_compatibility
+
+[(null)] [INFO] GL_ARB_ES3_1_compatibility
+
+[(null)] [INFO] GL_ARB_ES3_2_compatibility
+
+[(null)] [INFO] GL_ARB_explicit_attrib_location
+
+[(null)] [INFO] GL_ARB_explicit_uniform_location
+
+[(null)] [INFO] GL_ARB_fragment_coord_conventions
+
+[(null)] [INFO] GL_ARB_fragment_layer_viewport
+
+[(null)] [INFO] GL_ARB_fragment_program
+
+[(null)] [INFO] GL_ARB_fragment_program_shadow
+
+[(null)] [INFO] GL_ARB_fragment_shader
+
+[(null)] [INFO] GL_ARB_fragment_shader_interlock
+
+[(null)] [INFO] GL_ARB_framebuffer_no_attachments
+
+[(null)] [INFO] GL_ARB_framebuffer_object
+
+[(null)] [INFO] GL_ARB_framebuffer_sRGB
+
+[(null)] [INFO] GL_ARB_geometry_shader4
+
+[(null)] [INFO] GL_ARB_get_program_binary
+
+[(null)] [INFO] GL_ARB_get_texture_sub_image
+
+[(null)] [INFO] GL_ARB_gl_spirv
+
+[(null)] [INFO] GL_ARB_gpu_shader5
+
+[(null)] [INFO] GL_ARB_gpu_shader_fp64
+
+[(null)] [INFO] GL_ARB_gpu_shader_int64
+
+[(null)] [INFO] GL_ARB_half_float_pixel
+
+[(null)] [INFO] GL_ARB_half_float_vertex
+
+[(null)] [INFO] GL_ARB_imaging
+
+[(null)] [INFO] GL_ARB_indirect_parameters
+
+[(null)] [INFO] GL_ARB_instanced_arrays
+
+[(null)] [INFO] GL_ARB_internalformat_query
+
+[(null)] [INFO] GL_ARB_internalformat_query2
+
+[(null)] [INFO] GL_ARB_invalidate_subdata
+
+[(null)] [INFO] GL_ARB_map_buffer_alignment
+
+[(null)] [INFO] GL_ARB_map_buffer_range
+
+[(null)] [INFO] GL_ARB_multi_bind
+
+[(null)] [INFO] GL_ARB_multi_draw_indirect
+
+[(null)] [INFO] GL_ARB_multisample
+
+[(null)] [INFO] GL_ARB_multitexture
+
+[(null)] [INFO] GL_ARB_occlusion_query
+
+[(null)] [INFO] GL_ARB_occlusion_query2
+
+[(null)] [INFO] GL_ARB_parallel_shader_compile
+
+[(null)] [INFO] GL_ARB_pipeline_statistics_query
+
+[(null)] [INFO] GL_ARB_pixel_buffer_object
+
+[(null)] [INFO] GL_ARB_point_parameters
+
+[(null)] [INFO] GL_ARB_point_sprite
+
+[(null)] [INFO] GL_ARB_polygon_offset_clamp
+
+[(null)] [INFO] GL_ARB_post_depth_coverage
+
+[(null)] [INFO] GL_ARB_program_interface_query
+
+[(null)] [INFO] GL_ARB_provoking_vertex
+
+[(null)] [INFO] GL_ARB_query_buffer_object
+
+[(null)] [INFO] GL_ARB_robust_buffer_access_behavior
+
+[(null)] [INFO] GL_ARB_robustness
+
+[(null)] [INFO] GL_ARB_sample_locations
+
+[(null)] [INFO] GL_ARB_sample_shading
+
+[(null)] [INFO] GL_ARB_sampler_objects
+
+[(null)] [INFO] GL_ARB_seamless_cube_map
+
+[(null)] [INFO] GL_ARB_seamless_cubemap_per_texture
+
+[(null)] [INFO] GL_ARB_separate_shader_objects
+
+[(null)] [INFO] GL_ARB_shader_atomic_counter_ops
+
+[(null)] [INFO] GL_ARB_shader_atomic_counters
+
+[(null)] [INFO] GL_ARB_shader_ballot
+
+[(null)] [INFO] GL_ARB_shader_bit_encoding
+
+[(null)] [INFO] GL_ARB_shader_clock
+
+[(null)] [INFO] GL_ARB_shader_draw_parameters
+
+[(null)] [INFO] GL_ARB_shader_group_vote
+
+[(null)] [INFO] GL_ARB_shader_image_load_store
+
+[(null)] [INFO] GL_ARB_shader_image_size
+
+[(null)] [INFO] GL_ARB_shader_objects
+
+[(null)] [INFO] GL_ARB_shader_precision
+
+[(null)] [INFO] GL_ARB_shader_storage_buffer_object
+
+[(null)] [INFO] GL_ARB_shader_subroutine
+
+[(null)] [INFO] GL_ARB_shader_texture_image_samples
+
+[(null)] [INFO] GL_ARB_shader_texture_lod
+
+[(null)] [INFO] GL_ARB_shading_language_100
+
+[(null)] [INFO] GL_ARB_shader_viewport_layer_array
+
+[(null)] [INFO] GL_ARB_shading_language_420pack
+
+[(null)] [INFO] GL_ARB_shading_language_include
+
+[(null)] [INFO] GL_ARB_shading_language_packing
+
+[(null)] [INFO] GL_ARB_shadow
+
+[(null)] [INFO] GL_ARB_sparse_buffer
+
+[(null)] [INFO] GL_ARB_sparse_texture
+
+[(null)] [INFO] GL_ARB_sparse_texture2
+
+[(null)] [INFO] GL_ARB_sparse_texture_clamp
+
+[(null)] [INFO] GL_ARB_spirv_extensions
+
+[(null)] [INFO] GL_ARB_stencil_texturing
+
+[(null)] [INFO] GL_ARB_sync
+
+[(null)] [INFO] GL_ARB_tessellation_shader
+
+[(null)] [INFO] GL_ARB_texture_barrier
+
+[(null)] [INFO] GL_ARB_texture_border_clamp
+
+[(null)] [INFO] GL_ARB_texture_buffer_object
+
+[(null)] [INFO] GL_ARB_texture_buffer_object_rgb32
+
+[(null)] [INFO] GL_ARB_texture_buffer_range
+
+[(null)] [INFO] GL_ARB_texture_compression
+
+[(null)] [INFO] GL_ARB_texture_compression_bptc
+
+[(null)] [INFO] GL_ARB_texture_compression_rgtc
+
+[(null)] [INFO] GL_ARB_texture_cube_map
+
+[(null)] [INFO] GL_ARB_texture_cube_map_array
+
+[(null)] [INFO] GL_ARB_texture_env_add
+
+[(null)] [INFO] GL_ARB_texture_env_combine
+
+[(null)] [INFO] GL_ARB_texture_env_crossbar
+
+[(null)] [INFO] GL_ARB_texture_env_dot3
+
+[(null)] [INFO] GL_ARB_texture_filter_anisotropic
+
+[(null)] [INFO] GL_ARB_texture_filter_minmax
+
+[(null)] [INFO] GL_ARB_texture_float
+
+[(null)] [INFO] GL_ARB_texture_gather
+
+[(null)] [INFO] GL_ARB_texture_mirror_clamp_to_edge
+
+[(null)] [INFO] GL_ARB_texture_mirrored_repeat
+
+[(null)] [INFO] GL_ARB_texture_multisample
+
+[(null)] [INFO] GL_ARB_texture_non_power_of_two
+
+[(null)] [INFO] GL_ARB_texture_query_levels
+
+[(null)] [INFO] GL_ARB_texture_query_lod
+
+[(null)] [INFO] GL_ARB_texture_rectangle
+
+[(null)] [INFO] GL_ARB_texture_rg
+
+[(null)] [INFO] GL_ARB_texture_rgb10_a2ui
+
+[(null)] [INFO] GL_ARB_texture_stencil8
+
+[(null)] [INFO] GL_ARB_texture_storage
+
+[(null)] [INFO] GL_ARB_texture_storage_multisample
+
+[(null)] [INFO] GL_ARB_texture_swizzle
+
+[(null)] [INFO] GL_ARB_texture_view
+
+[(null)] [INFO] GL_ARB_timer_query
+
+[(null)] [INFO] GL_ARB_transform_feedback2
+
+[(null)] [INFO] GL_ARB_transform_feedback3
+
+[(null)] [INFO] GL_ARB_transform_feedback_instanced
+
+[(null)] [INFO] GL_ARB_transform_feedback_overflow_query
+
+[(null)] [INFO] GL_ARB_transpose_matrix
+
+[(null)] [INFO] GL_ARB_uniform_buffer_object
+
+[(null)] [INFO] GL_ARB_vertex_array_bgra
+
+[(null)] [INFO] GL_ARB_vertex_array_object
+
+[(null)] [INFO] GL_ARB_vertex_attrib_64bit
+
+[(null)] [INFO] GL_ARB_vertex_attrib_binding
+
+[(null)] [INFO] GL_ARB_vertex_buffer_object
+
+[(null)] [INFO] GL_ARB_vertex_program
+
+[(null)] [INFO] GL_ARB_vertex_shader
+
+[(null)] [INFO] GL_ARB_vertex_type_10f_11f_11f_rev
+
+[(null)] [INFO] GL_ARB_vertex_type_2_10_10_10_rev
+
+[(null)] [INFO] GL_ARB_viewport_array
+
+[(null)] [INFO] GL_ARB_window_pos
+
+[(null)] [INFO] GL_ATI_draw_buffers
+
+[(null)] [INFO] GL_ATI_texture_float
+
+[(null)] [INFO] GL_ATI_texture_mirror_once
+
+[(null)] [INFO] GL_S3_s3tc
+
+[(null)] [INFO] GL_EXT_texture_env_add
+
+[(null)] [INFO] GL_EXT_abgr
+
+[(null)] [INFO] GL_EXT_bgra
+
+[(null)] [INFO] GL_EXT_bindable_uniform
+
+[(null)] [INFO] GL_EXT_blend_color
+
+[(null)] [INFO] GL_EXT_blend_equation_separate
+
+[(null)] [INFO] GL_EXT_blend_func_separate
+
+[(null)] [INFO] GL_EXT_blend_minmax
+
+[(null)] [INFO] GL_EXT_blend_subtract
+
+[(null)] [INFO] GL_EXT_compiled_vertex_array
+
+[(null)] [INFO] GL_EXT_Cg_shader
+
+[(null)] [INFO] GL_EXT_depth_bounds_test
+
+[(null)] [INFO] GL_EXT_direct_state_access
+
+[(null)] [INFO] GL_EXT_draw_buffers2
+
+[(null)] [INFO] GL_EXT_draw_instanced
+
+[(null)] [INFO] GL_EXT_draw_range_elements
+
+[(null)] [INFO] GL_EXT_fog_coord
+
+[(null)] [INFO] GL_EXT_framebuffer_blit
+
+[(null)] [INFO] GL_EXT_framebuffer_multisample
+
+[(null)] [INFO] GL_EXTX_framebuffer_mixed_formats
+
+[(null)] [INFO] GL_EXT_framebuffer_multisample_blit_scaled
+
+[(null)] [INFO] GL_EXT_framebuffer_object
+
+[(null)] [INFO] GL_EXT_framebuffer_sRGB
+
+[(null)] [INFO] GL_EXT_geometry_shader4
+
+[(null)] [INFO] GL_EXT_gpu_program_parameters
+
+[(null)] [INFO] GL_EXT_gpu_shader4
+
+[(null)] [INFO] GL_EXT_multi_draw_arrays
+
+[(null)] [INFO] GL_EXT_multiview_texture_multisample
+
+[(null)] [INFO] GL_EXT_multiview_timer_query
+
+[(null)] [INFO] GL_EXT_packed_depth_stencil
+
+[(null)] [INFO] GL_EXT_packed_float
+
+[(null)] [INFO] GL_EXT_packed_pixels
+
+[(null)] [INFO] GL_EXT_pixel_buffer_object
+
+[(null)] [INFO] GL_EXT_point_parameters
+
+[(null)] [INFO] GL_EXT_polygon_offset_clamp
+
+[(null)] [INFO] GL_EXT_post_depth_coverage
+
+[(null)] [INFO] GL_EXT_provoking_vertex
+
+[(null)] [INFO] GL_EXT_raster_multisample
+
+[(null)] [INFO] GL_EXT_rescale_normal
+
+[(null)] [INFO] GL_EXT_secondary_color
+
+[(null)] [INFO] GL_EXT_separate_shader_objects
+
+[(null)] [INFO] GL_EXT_separate_specular_color
+
+[(null)] [INFO] GL_EXT_shader_image_load_formatted
+
+[(null)] [INFO] GL_EXT_shader_image_load_store
+
+[(null)] [INFO] GL_EXT_shader_integer_mix
+
+[(null)] [INFO] GL_EXT_shadow_funcs
+
+[(null)] [INFO] GL_EXT_sparse_texture2
+
+[(null)] [INFO] GL_EXT_stencil_two_side
+
+[(null)] [INFO] GL_EXT_stencil_wrap
+
+[(null)] [INFO] GL_EXT_texture3D
+
+[(null)] [INFO] GL_EXT_texture_array
+
+[(null)] [INFO] GL_EXT_texture_buffer_object
+
+[(null)] [INFO] GL_EXT_texture_compression_dxt1
+
+[(null)] [INFO] GL_EXT_texture_compression_latc
+
+[(null)] [INFO] GL_EXT_texture_compression_rgtc
+
+[(null)] [INFO] GL_EXT_texture_compression_s3tc
+
+[(null)] [INFO] GL_EXT_texture_cube_map
+
+[(null)] [INFO] GL_EXT_texture_edge_clamp
+
+[(null)] [INFO] GL_EXT_texture_env_combine
+
+[(null)] [INFO] GL_EXT_texture_env_dot3
+
+[(null)] [INFO] GL_EXT_texture_filter_anisotropic
+
+[(null)] [INFO] GL_EXT_texture_filter_minmax
+
+[(null)] [INFO] GL_EXT_texture_integer
+
+[(null)] [INFO] GL_EXT_texture_lod
+
+[(null)] [INFO] GL_EXT_texture_lod_bias
+
+[(null)] [INFO] GL_EXT_texture_mirror_clamp
+
+[(null)] [INFO] GL_EXT_texture_object
+
+[(null)] [INFO] GL_EXT_texture_shadow_lod
+
+[(null)] [INFO] GL_EXT_texture_shared_exponent
+
+[(null)] [INFO] GL_EXT_texture_sRGB
+
+[(null)] [INFO] GL_EXT_texture_sRGB_R8
+
+[(null)] [INFO] GL_EXT_texture_sRGB_decode
+
+[(null)] [INFO] GL_EXT_texture_storage
+
+[(null)] [INFO] GL_EXT_texture_swizzle
+
+[(null)] [INFO] GL_EXT_timer_query
+
+[(null)] [INFO] GL_EXT_transform_feedback2
+
+[(null)] [INFO] GL_EXT_vertex_array
+
+[(null)] [INFO] GL_EXT_vertex_array_bgra
+
+[(null)] [INFO] GL_EXT_vertex_attrib_64bit
+
+[(null)] [INFO] GL_EXT_window_rectangles
+
+[(null)] [INFO] GL_EXT_x11_sync_object
+
+[(null)] [INFO] GL_EXT_import_sync_object
+
+[(null)] [INFO] GL_NV_robustness_video_memory_purge
+
+[(null)] [INFO] GL_IBM_rasterpos_clip
+
+[(null)] [INFO] GL_IBM_texture_mirrored_repeat
+
+[(null)] [INFO] GL_KHR_context_flush_control
+
+[(null)] [INFO] GL_KHR_debug
+
+[(null)] [INFO] GL_EXT_memory_object
+
+[(null)] [INFO] GL_EXT_memory_object_fd
+
+[(null)] [INFO] GL_NV_memory_object_sparse
+
+[(null)] [INFO] GL_KHR_parallel_shader_compile
+
+[(null)] [INFO] GL_KHR_no_error
+
+[(null)] [INFO] GL_KHR_robust_buffer_access_behavior
+
+[(null)] [INFO] GL_KHR_robustness
+
+[(null)] [INFO] GL_EXT_semaphore
+
+[(null)] [INFO] GL_EXT_semaphore_fd
+
+[(null)] [INFO] GL_NV_timeline_semaphore
+
+[(null)] [INFO] GL_KHR_shader_subgroup
+
+[(null)] [INFO] GL_KTX_buffer_region
+
+[(null)] [INFO] GL_NV_alpha_to_coverage_dither_control
+
+[(null)] [INFO] GL_NV_bindless_multi_draw_indirect
+
+[(null)] [INFO] GL_NV_bindless_multi_draw_indirect_count
+
+[(null)] [INFO] GL_NV_bindless_texture
+
+[(null)] [INFO] GL_NV_blend_equation_advanced
+
+[(null)] [INFO] GL_NV_blend_equation_advanced_coherent
+
+[(null)] [INFO] GL_NVX_blend_equation_advanced_multi_draw_buffers
+
+[(null)] [INFO] GL_NV_blend_minmax_factor
+
+[(null)] [INFO] GL_NV_blend_square
+
+[(null)] [INFO] GL_NV_clip_space_w_scaling
+
+[(null)] [INFO] GL_NV_command_list
+
+[(null)] [INFO] GL_NV_compute_program5
+
+[(null)] [INFO] GL_NV_compute_shader_derivatives
+
+[(null)] [INFO] GL_NV_conditional_render
+
+[(null)] [INFO] GL_NV_conservative_raster
+
+[(null)] [INFO] GL_NV_conservative_raster_dilate
+
+[(null)] [INFO] GL_NV_conservative_raster_pre_snap
+
+[(null)] [INFO] GL_NV_conservative_raster_pre_snap_triangles
+
+[(null)] [INFO] GL_NV_conservative_raster_underestimation
+
+[(null)] [INFO] GL_NV_copy_depth_to_color
+
+[(null)] [INFO] GL_NV_copy_image
+
+[(null)] [INFO] GL_NV_depth_buffer_float
+
+[(null)] [INFO] GL_NV_depth_clamp
+
+[(null)] [INFO] GL_NV_draw_texture
+
+[(null)] [INFO] GL_NV_draw_vulkan_image
+
+[(null)] [INFO] GL_NV_ES1_1_compatibility
+
+[(null)] [INFO] GL_NV_ES3_1_compatibility
+
+[(null)] [INFO] GL_NV_explicit_multisample
+
+[(null)] [INFO] GL_NV_feature_query
+
+[(null)] [INFO] GL_NV_fence
+
+[(null)] [INFO] GL_NV_fill_rectangle
+
+[(null)] [INFO] GL_NV_float_buffer
+
+[(null)] [INFO] GL_NV_fog_distance
+
+[(null)] [INFO] GL_NV_fragment_coverage_to_color
+
+[(null)] [INFO] GL_NV_fragment_program
+
+[(null)] [INFO] GL_NV_fragment_program_option
+
+[(null)] [INFO] GL_NV_fragment_program2
+
+[(null)] [INFO] GL_NV_fragment_shader_barycentric
+
+[(null)] [INFO] GL_NV_fragment_shader_interlock
+
+[(null)] [INFO] GL_NV_framebuffer_mixed_samples
+
+[(null)] [INFO] GL_NV_framebuffer_multisample_coverage
+
+[(null)] [INFO] GL_NV_geometry_shader4
+
+[(null)] [INFO] GL_NV_geometry_shader_passthrough
+
+[(null)] [INFO] GL_NV_gpu_program4
+
+[(null)] [INFO] GL_NV_internalformat_sample_query
+
+[(null)] [INFO] GL_NV_gpu_program4_1
+
+[(null)] [INFO] GL_NV_gpu_program5
+
+[(null)] [INFO] GL_NV_gpu_program5_mem_extended
+
+[(null)] [INFO] GL_NV_gpu_program_fp64
+
+[(null)] [INFO] GL_NV_gpu_program_multiview
+
+[(null)] [INFO] GL_NV_gpu_shader5
+
+[(null)] [INFO] GL_NV_half_float
+
+[(null)] [INFO] GL_NV_light_max_exponent
+
+[(null)] [INFO] GL_NV_memory_attachment
+
+[(null)] [INFO] GL_NV_mesh_shader
+
+[(null)] [INFO] GL_NV_multisample_coverage
+
+[(null)] [INFO] GL_NV_multisample_filter_hint
+
+[(null)] [INFO] GL_NV_occlusion_query
+
+[(null)] [INFO] GL_NV_packed_depth_stencil
+
+[(null)] [INFO] GL_NV_parameter_buffer_object
+
+[(null)] [INFO] GL_NV_parameter_buffer_object2
+
+[(null)] [INFO] GL_NV_path_rendering
+
+[(null)] [INFO] GL_NV_path_rendering_shared_edge
+
+[(null)] [INFO] GL_NV_pixel_data_range
+
+[(null)] [INFO] GL_NV_point_sprite
+
+[(null)] [INFO] GL_NV_primitive_restart
+
+[(null)] [INFO] GL_NV_primitive_shading_rate
+
+[(null)] [INFO] GL_NV_query_resource
+
+[(null)] [INFO] GL_NV_query_resource_tag
+
+[(null)] [INFO] GL_NV_register_combiners
+
+[(null)] [INFO] GL_NV_register_combiners2
+
+[(null)] [INFO] GL_NV_representative_fragment_test
+
+[(null)] [INFO] GL_NV_sample_locations
+
+[(null)] [INFO] GL_NV_sample_mask_override_coverage
+
+[(null)] [INFO] GL_NV_scissor_exclusive
+
+[(null)] [INFO] GL_NV_shader_atomic_counters
+
+[(null)] [INFO] GL_NV_shader_atomic_float
+
+[(null)] [INFO] GL_NV_shader_atomic_float64
+
+[(null)] [INFO] GL_NV_shader_atomic_fp16_vector
+
+[(null)] [INFO] GL_NV_shader_atomic_int64
+
+[(null)] [INFO] GL_NV_shader_buffer_load
+
+[(null)] [INFO] GL_NV_shader_storage_buffer_object
+
+[(null)] [INFO] GL_NV_shader_subgroup_partitioned
+
+[(null)] [INFO] GL_NV_shader_texture_footprint
+
+[(null)] [INFO] GL_NV_shading_rate_image
+
+[(null)] [INFO] GL_NV_stereo_view_rendering
+
+[(null)] [INFO] GL_NV_texgen_reflection
+
+[(null)] [INFO] GL_NV_texture_barrier
+
+[(null)] [INFO] GL_NV_texture_compression_vtc
+
+[(null)] [INFO] GL_NV_texture_dirty_tile_map
+
+[(null)] [INFO] GL_NV_texture_env_combine4
+
+[(null)] [INFO] GL_NV_texture_multisample
+
+[(null)] [INFO] GL_NV_texture_rectangle
+
+[(null)] [INFO] GL_NV_texture_rectangle_compressed
+
+[(null)] [INFO] GL_NV_texture_shader
+
+[(null)] [INFO] GL_NV_texture_shader2
+
+[(null)] [INFO] GL_NV_texture_shader3
+
+[(null)] [INFO] GL_NV_transform_feedback
+
+[(null)] [INFO] GL_NV_transform_feedback2
+
+[(null)] [INFO] GL_NV_uniform_buffer_unified_memory
+
+[(null)] [INFO] GL_NV_uniform_buffer_std430_layout
+
+[(null)] [INFO] GL_NV_vdpau_interop
+
+[(null)] [INFO] GL_NV_vdpau_interop2
+
+[(null)] [INFO] GL_NV_vertex_array_range
+
+[(null)] [INFO] GL_NV_vertex_array_range2
+
+[(null)] [INFO] GL_NV_vertex_attrib_integer_64bit
+
+[(null)] [INFO] GL_NV_vertex_buffer_unified_memory
+
+[(null)] [INFO] GL_NV_vertex_program
+
+[(null)] [INFO] GL_NV_vertex_program1_1
+
+[(null)] [INFO] GL_NV_vertex_program2
+
+[(null)] [INFO] GL_NV_vertex_program2_option
+
+[(null)] [INFO] GL_NV_vertex_program3
+
+[(null)] [INFO] GL_NV_viewport_array2
+
+[(null)] [INFO] GL_NV_viewport_swizzle
+
+[(null)] [INFO] GL_NVX_conditional_render
+
+[(null)] [INFO] GL_NV_gpu_multicast
+
+[(null)] [INFO] GL_NVX_progress_fence
+
+[(null)] [INFO] GL_NVX_gpu_memory_info
+
+[(null)] [INFO] GL_NVX_nvenc_interop
+
+[(null)] [INFO] GL_NV_shader_thread_group
+
+[(null)] [INFO] GL_NV_shader_thread_shuffle
+
+[(null)] [INFO] GL_KHR_blend_equation_advanced
+
+[(null)] [INFO] GL_KHR_blend_equation_advanced_coherent
+
+[(null)] [INFO] GL_OVR_multiview
+
+[(null)] [INFO] GL_OVR_multiview2
+
+[(null)] [INFO] GL_SGIS_generate_mipmap
+
+[(null)] [INFO] GL_SGIS_texture_lod
+
+[(null)] [INFO] GL_SGIX_depth_texture
+
+[(null)] [INFO] GL_SGIX_shadow
+
+[(null)] [INFO] GL_SUN_slice_accum
+
+[(null)] [INFO] ----------------------
+
+

@@ -1,4 +1,5 @@
 #include "WindowManager.h"
+#include "Logger.h"
 #include "Shader.h"
 
 // X11 Header Files
@@ -9,22 +10,34 @@
 #include <cstring>
 #include <cstdlib>
 
+// /////////////////////////////////////////////////////////////////////
+
 enum
 {
     AMC_ATTRIBUTE_POSITION = 0,
     AMC_ATTRIBUTE_COLOR = 1
 };
 
+GLuint vao_triangle = 0;
+GLuint vbo_position_triange = 0;
+GLuint vbo_color_triangle = 0;
+Shader shaderProgram;
+
+// /////////////////////////////////////////////////////////////////////
+
 WindowManager::WindowManager(int width, int height, char *title)
-    : width(width), height(height), fullscreen(true),
+    : width(width), height(height), fullscreen(false),
       running(true), focused(true), display(nullptr), window(0), colormap(0), visualInfo(nullptr),
-      glXCreateContextAttribsARB(nullptr), glxFBConfig(0), glxContext(nullptr), logger()
+      glXCreateContextAttribsARB(nullptr), glxFBConfig(0), glxContext(nullptr)
 {
-    if (title == nullptr) {
+    if (title == nullptr)
+    {
         // Use default title
         this->title = new char[strlen("XWindow::OpenGL|Window") + 1];
         strcpy(this->title, "XWindow::OpenGL|Window");
-    } else {
+    }
+    else
+    {
         // Allocate memory and copy provided title
         this->title = new char[strlen(title) + 1];
         strcpy(this->title, title);
@@ -53,7 +66,80 @@ void WindowManager::run()
 {
     while (running)
     {
-        handleEvents();
+        // Handle events (e.g., user input, window events)
+        XEvent event;
+        KeySym keySym;
+        char keys[26];
+
+        while (XPending(display))
+        {
+            memset((void *)&event, 0, sizeof(XEvent));
+            XNextEvent(display, &event);
+
+            switch (event.type)
+            {
+            case MapNotify: // ShowWindow(): WIN32 (WM_CREATE)
+                break;
+            case FocusIn:
+                focused = true;
+                break;
+            case FocusOut:
+                focused = false;
+                break;
+            case ConfigureNotify:
+                resize(event.xconfigure.width, event.xconfigure.height);
+                break;
+            case ButtonPress:
+                switch (event.xbutton.button)
+                {
+                case 1:
+                    break;
+                default:
+                    break;
+                }
+                break;
+            case KeyPress:
+                keySym = XkbKeycodeToKeysym(
+                    display,
+                    event.xkey.keycode, // XWindows KeyCode
+                    0,                  // Keycode Group Representation
+                    0                   // Shift Status
+                );
+                switch (keySym)
+                {
+                case XK_Escape:
+                    running = false;
+                    break;
+                default:
+                    break;
+                }
+
+                XLookupString(
+                    &event.xkey,
+                    keys,
+                    sizeof(keys),
+                    NULL, // Array to save all keySym for every key pressed
+                    NULL  // State persistence of the keys pressed
+                );
+
+                switch (keys[0])
+                {
+                case 'F':
+                case 'f':
+                    fullscreen = !fullscreen;
+                    toggleFullscreen();
+                    break;
+                default:
+                    break;
+                }
+                break;
+            case 33: // atom protocol exit
+                running = true;
+                break;
+            default:
+                break;
+            }
+        }
 
         if (focused)
         {
@@ -85,10 +171,7 @@ void WindowManager::resize(int width, int height)
 
 void WindowManager::render()
 {
-    GLuint vao_triangle = 0;
-    GLuint vbo_position_triange = 0;
-    GLuint vbo_color_triangle = 0;
-    Shader shaderProgram;
+
 
     // Add shaders (from source or file)
     shaderProgram.addShaderFromFile(ShaderType::Vertex, "shaders/triangle/vertexShader.glsl");
@@ -263,7 +346,7 @@ void WindowManager::createWindow()
             // ii. Get Samples
             glXGetFBConfigAttrib(display, glxFBConfigs[i], GLX_SAMPLES, &samples);
 
-            if (bestFrameBufferConfig < 0 || sampleBuffers && samples > bestNumberOfSamples)
+            if (bestFrameBufferConfig < 0 || (sampleBuffers && samples > bestNumberOfSamples))
             {
                 bestFrameBufferConfig = i;
                 bestNumberOfSamples = samples;
@@ -385,18 +468,6 @@ void WindowManager::setupGL()
         exit(1);
     }
 
-    // Get framebuffer configuration
-    int attribs[] = {
-        GLX_X_RENDERABLE, True,
-        GLX_DRAWABLE_TYPE, GLX_WINDOW_BIT,
-        GLX_RENDER_TYPE, GLX_RGBA_BIT,
-        GLX_DOUBLEBUFFER, True,
-        GLX_RED_SIZE, 8,
-        GLX_GREEN_SIZE, 8,
-        GLX_BLUE_SIZE, 8,
-        GLX_ALPHA_SIZE, 8,
-        None};
-
     glxContext = glXCreateContextAttribsARB(display, this->glxFBConfig, 0, True, context_attribs_new);
     if (!glxContext)
     {
@@ -458,14 +529,13 @@ void WindowManager::setupGLEW()
         exit(1);
     }
 
-    // printGLInfo();
+    printGLInfo();
 }
 
 void WindowManager::printGLInfo()
 {
     // variable declarations
     GLint numExtensions;
-    GLint i;
 
     // Get OpenGL information
     const char *vendor = reinterpret_cast<const char *>(glGetString(GL_VENDOR));
@@ -532,82 +602,4 @@ void WindowManager::toggleFullscreen(void)
         False, // Weather to propogate the fullscreen event to all children windows
         SubstructureNotifyMask,
         &event);
-}
-
-void WindowManager::handleEvents()
-{
-    // Handle events (e.g., user input, window events)
-    XEvent event;
-    KeySym keySym;
-    char keys[26];
-
-    while (XPending(display))
-    {
-        memset((void *)&event, 0, sizeof(XEvent));
-        XNextEvent(display, &event);
-
-        switch (event.type)
-        {
-        case MapNotify: // ShowWindow(): WIN32 (WM_CREATE)
-            break;
-        case FocusIn:
-            focused = true;
-            break;
-        case FocusOut:
-            focused = false;
-            break;
-        case ConfigureNotify:
-            resize(event.xconfigure.width, event.xconfigure.height);
-            break;
-        case ButtonPress:
-            switch (event.xbutton.button)
-            {
-            case 1:
-                break;
-            default:
-                break;
-            }
-            break;
-        case KeyPress:
-            keySym = XkbKeycodeToKeysym(
-                display,
-                event.xkey.keycode, // XWindows KeyCode
-                0,                  // Keycode Group Representation
-                0                   // Shift Status
-            );
-            switch (keySym)
-            {
-            case XK_Escape:
-                running = true;
-                break;
-            default:
-                break;
-            }
-
-            XLookupString(
-                &event.xkey,
-                keys,
-                sizeof(keys),
-                NULL, // Array to save all keySym for every key pressed
-                NULL  // State persistence of the keys pressed
-            );
-
-            switch (keys[0])
-            {
-            case 'F':
-            case 'f':
-                fullscreen = !fullscreen;
-                toggleFullscreen();
-                break;
-            default:
-                break;
-            }
-            break;
-        case 33: // atom protocol exit
-            running = true;
-            break;
-        default:
-            break;
-        }
-    }
 }

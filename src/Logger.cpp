@@ -2,6 +2,9 @@
 #include <time.h>
 #include <ctime>
 
+// Definition of the global logger instance
+Logger logger;
+
 Logger::Logger()
 {
     if (debugFile == nullptr)

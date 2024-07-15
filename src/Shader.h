@@ -4,8 +4,6 @@
 #include <GL/glew.h>
 #include <string>
 
-#include "Logger.h"
-
 enum class ShaderType {
     Vertex,
     Fragment,
@@ -28,7 +26,6 @@ public:
     void cleanup();
 
 private:
-    Logger logger;
     unsigned int programID;
     unsigned int shaderIDs[static_cast<int>(ShaderType::NumShaderTypes)];
 
